@@ -21,10 +21,10 @@
   * git clone  https://github.com/WangariNelly/Task_Manager_API.git
 
  ##      Install dependencies:
- * npm install
+  * npm install
 
 ## Start the server:
-* npm start
+  * npm start
 - The API will typically be running on port 5000 (you can configure this in the code). You can interact with the API using tools like Postman or by making requests directly in your code.
 API Endpoints
 
