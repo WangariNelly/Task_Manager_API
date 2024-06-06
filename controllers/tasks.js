@@ -18,8 +18,6 @@ export const updateTasks = (req,res) => {
     res.send('Task updates')
 };
 
-
-
 export const deleteTasks = (req,res) => {
     res.send('Task deleted')
 };
