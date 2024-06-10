@@ -7,7 +7,7 @@ import tasks from './routes/tasks.js';
 import dotenv from 'dotenv';
 dotenv.config();
 import notFound from './middleware/not-found.js';
-
+import errorHandlerMiddleware from './middleware/error-handler.js';
 
 //middleware
 app.use(express.static('./public'))
@@ -17,7 +17,9 @@ app.use(express.json());
 //routes
 app.use('/api/v1/tasks', tasks);
 
+//custom middlewares
 app.use(notFound);
+app.use(errorHandlerMiddleware);
 
 //connect to DB
 const connectToDatabase = async ()=> {
