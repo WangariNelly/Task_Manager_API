@@ -1,4 +1,5 @@
 import Task from '../models/tasks.js'
+import asyncWrapper from '../middleware/async.js';
 
 export const getAllTasks = async (req,res) => {
     try{
